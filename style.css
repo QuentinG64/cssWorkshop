@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Ajout du scroll smooth lors du click sur nav bar */
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: #f76c6c;
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    opacity: 0.75;
+
+
+}
+
+
+
+.home{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+li {
+    padding: 1rem;
+}
+
+
+.imgHomepage{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.hello {
+    position: absolute;
+    color:#fff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 7rem;
+    font-weight: bold;
+    animation: fadein 4s;
+    /* mise au premier plan du h1 avec l'axe Z et index */
+    z-index: 1;
+}
+
+
+.video-container {
+    width: 100%;
+    /* le z index est sur le meme principe qu'arrière/premier plan  */
+    z-index: -2; 
+}
+
+/* Transition pour chgment opacité via fction keyframes*/
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+#cheat {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #f76c6c;
+    font-weight:bold;
+    font-size: 35px;
+    margin-bottom: 4rem;
+}
+
+.aboutUs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  
+}
+
+/* Appliquer la limite de caractère uniquement sur le paragraphe et non la div entière */
+.para{
+    max-width: 65ch;
+}
+.featuredPost{
+    
+    color: black;
+    text-align: center;
+    margin-bottom: 4rem;
+    
+}
+/* Création de la grille pour la partie Featured Post */
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 12rem 12rem;
+    gap: 20px;
+    justify-content: center;
+    
+   
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f76c6c;
+    color: #fff;
+    width: auto;
+    border-radius: 5px;
+    box-shadow:7px 3px 3px black; 
+    transition: transform .2s;
+    transition: background-color .2s;
+    transition: color .2s;
+}
+/* Animation au passage de la sourie */
+article:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: #f76c6c;
+}
+
+/* Création du footer avec CC + logo */
+
+footer{
+    display: flex;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 91%;
+}
